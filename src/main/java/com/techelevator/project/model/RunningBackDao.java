@@ -7,6 +7,7 @@ import com.techelevator.project.model.RunningBack;
 public interface RunningBackDao {
 	
 	public List<RunningBack> getAllRunningBacks();
-	
+	public List<RunningBack> getRBByTeamName(String teamName);
+
 }
 

@@ -4,6 +4,7 @@ public class RunningBack {
 
 	private Long id;
 	private String name;
+	
 	public Long getId() {
 		return id;
 	}
@@ -16,4 +17,5 @@ public class RunningBack {
 	public void setName(String name) {
 		this.name = name;
 	}
+	
 }

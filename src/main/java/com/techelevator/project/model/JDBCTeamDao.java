@@ -33,5 +33,6 @@ public class JDBCTeamDao implements TeamDao {
 			}
 			return allTeams;
 		}
+		
 	}
 

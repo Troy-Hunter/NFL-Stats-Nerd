@@ -1,9 +1,10 @@
+
 package com.techelevator.project.model;
 
 public class Team {
 	
 	private Long id;
-	private String name;
+	private String teamName;
 	private String imageName;
 	
 
@@ -14,10 +15,10 @@ public class Team {
 		this.id = id;
 	}
 	public String getName() {
-		return name;
+		return teamName;
 	}
-	public void setName(String name) {
-		this.name = name;
+	public void setName(String teamName) {
+		this.teamName = teamName;
 	}
 	public String getImageName() {
 		return imageName;

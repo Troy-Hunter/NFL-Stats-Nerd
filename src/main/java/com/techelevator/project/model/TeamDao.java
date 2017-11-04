@@ -7,5 +7,4 @@ import com.techelevator.project.model.Team;
 public interface TeamDao {
 
 	public List<Team> getAllTeams();
-	
 }
