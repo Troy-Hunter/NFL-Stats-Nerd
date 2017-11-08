@@ -21,8 +21,8 @@ public class JDBCRunningBackGamesDao implements RunningBackGamesDao {
 	public RunningBackGames getRunningBack(String name) {
 		RunningBack rb = new RunningBack();
 		RunningBackGames games = new RunningBackGames();
-		String sqlSelectRb = "SELECT * FROM runningback rb"
-				+ "JOIN running_back_games rbg ON rbg.running_back_id = rb.running_back_id" 
+		String sqlSelectRb = "SELECT * FROM runningback rb "
+				+ "JOIN running_back_games rbg ON rbg.running_back_id = rb.running_back_id " 
 				+ "JOIN team t ON rb.team_id = t.team_id WHERE name = ?";
 		SqlRowSet results = jdbcTemplate.queryForRowSet(sqlSelectRb, name.toUpperCase());
 		

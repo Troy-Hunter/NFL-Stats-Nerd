@@ -53,7 +53,7 @@ public class HomePageController {
 		return "skillPlayers";
 	}
 	
-	@RequestMapping(path="/individualStats/{name}", method=RequestMethod.GET)
+	@RequestMapping(path="/stats/{name}", method=RequestMethod.GET)
 	public String showIndividualPlayer(@PathVariable String name, ModelMap modelHolder){
 		RunningBackGames stats = runningBackGamesDao.getRunningBack(name);
 		System.out.print(stats);

@@ -8,11 +8,12 @@
 <div>
 <c:url var="skillPlayersUrl" value="/skillPlayers"/>
 <form:form method="GET" action="${skillPlayersUrl}" >
-<c:forEach items="${skillPlayers}" var ="runningbacks">
-	<c:url value="stats/${runningback.name.toLowerCase()}" var="player"/>
-	<a href="${individualStats}">
-	<c:url value="${runningbacks.name}"/><br></a>
-</c:forEach>
+
+	<c:forEach items="${skillPlayers}" var ="runningback">
+		<c:url value="/stats/${runningback.name.toLowerCase()}" var="playerStatsUrl"/>
+		<a href="${playerStatsUrl}">
+		<c:out value="${runningback.name}"/><br></a>
+	</c:forEach>
 
 </form:form>
 </div>
