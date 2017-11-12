@@ -10,6 +10,8 @@
 
 .team-name {
 	font-size: 20px;
+	text-align: left;
+	padding: 5%;
 }
 
 .container {
@@ -36,5 +38,9 @@ div.item {
 .centered {
 	text-align: center;
 	margin-top: 5%;
+}
+
+img:hover {
+	opacity: .3;
 }
 
